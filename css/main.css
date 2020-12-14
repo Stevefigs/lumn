@@ -106,9 +106,14 @@ logo {
   0% {
     opacity: 1;
     scale: 1; }
-  100% {
+  90% {
     opacity: 0;
-    scale: 1.1; } }
+    scale: 1.1;
+    transform: translateY(0);
+    100% {
+      opacity: 0;
+      scale: 1.1;
+      transform: translateY(-100%); } } }
 @keyframes rotate {
   to {
     transform: translateY(200px); } }

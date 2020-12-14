@@ -90,7 +90,7 @@ logo {
    	text-align:center;
   	transition:all;
   	animation-name:fadedown;
- 	animation-duration:2s;
+ 	  animation-duration:2s;
   	animation-fill-mode: forwards;
   	animation-delay:3s;
   	font-weight:100;
@@ -125,9 +125,17 @@ logo {
     scale:1;
   }
 
+  90%{
+    opacity:0;
+    scale:1.1;
+    transform: translateY(0);
+
   100%{
     opacity:0;
     scale:1.1;
+     transform: translateY(-100%);
+  }
+
   }
 }
 
