@@ -1,0 +1,50 @@
+
+footer{
+	padding:2rem;
+	height:100vh;
+	display:grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	background-image: url(../img/moon.jpg);
+  	background-size:cover;
+  	background-attachment: fixed;
+  	background-position: center-bottom;
+
+  	.whtlogofoot{
+ 		grid-column: 2 / span 2;
+ 		grid-row:2;
+ 		width: 200px;
+ 		align-self:center;
+ 		justify-self:center;
+  	}
+
+  	h5{
+  		grid-column:1 /span 2;
+  		grid-row:3;
+  		justify-self:start;
+  		align-self:end;
+  		padding:0;
+  		margin:0;
+  		color:#fff;
+  	}
+
+  	ul{
+  		padding:0;
+  		margin:0;
+  		display:grid;
+  		grid-gap:1rem;
+  		grid-template-columns: repeat(3, auto);
+  		grid-column: 3 / span 2;
+  		grid-row: 3;
+  		align-self:end;
+  		justify-self:end;
+  		.social{
+  			height:20px;
+  		}
+
+  	}
+}
+
+
+
+

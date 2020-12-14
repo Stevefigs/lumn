@@ -1,0 +1,73 @@
+.faqs{
+  height:101vh;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .5fr .5fr 1.5fr;
+  background-image: url(../img/bigdarkfloor.jpg);
+  background-size:cover;
+}
+
+.faqtitle{
+  margin:-75px 0 0 0;
+  padding:0;
+  grid-column:1;
+  grid-row:1;
+  align-self:start;
+  justify-self:start;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #fff;
+  opacity: .23;
+  font-style:italic;
+  font-weight:700;
+  font-size:25rem; 
+  letter-spacing:5px; 
+
+}
+
+
+.accordionfaq {
+    padding:0 6rem 2rem 2rem;
+    grid-row:1 / span 2;
+    grid-column: 1 /span 2;
+    z-index:2;
+    display:grid;
+    grid-template-rows: repeat (4, 1fr);
+    margin: 0;
+    list-style: none;
+    align-self:end;
+    justify-self:end;
+    li{
+      display:grid;
+      justify-items:right;
+    }
+    .faq {
+      transition: color 0.5s ease;
+      color: #fff;
+      &:hover {
+        cursor: pointer;
+        color:#006E99;
+
+      }
+    }
+  }
+
+
+.accordion-contentfaq {
+  max-height: 0rem;
+  overflow: hidden;
+  transition: all .4s;
+  border-bottom: 5px solid white ;
+  p{
+    font-size:1rem;
+    font-style:italic;
+  }
+}
+
+.morefaq {
+  padding: 0 10px 0 10px;
+  max-height: 4.5rem;
+  background: rgba(247,247,247, .1);
+  background: linear-gradient(45deg, rgba(236,243,246,.5) 0%, rgba(250,350,350,.5) 40%, rgba(247,247,247,.5) 66%, rgba(233,243,247,.5) 100%);  
+  box-shadow: 10px 10px 10px .05px rgba(160, 160, 160, 0.25) inset, -10px -10px 10px .05px rgba(113, 113, 113, 0.15) inset;
+  border-radius: 5px;// just a high number
+}
