@@ -112,6 +112,11 @@ $('.faq').click(function(){
   })
 
 
+   $('.function').mouseenter(function(){
+  $('.quote').hide();
+  })
+
+
 
 
 

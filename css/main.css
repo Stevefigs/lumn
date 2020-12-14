@@ -106,14 +106,9 @@ logo {
   0% {
     opacity: 1;
     scale: 1; }
-  90% {
+  100% {
     opacity: 0;
-    scale: 1.1;
-    transform: translateY(0);
-    100% {
-      opacity: 0;
-      scale: 1.1;
-      transform: translateY(-100%); } } }
+    scale: 1.1; } }
 @keyframes rotate {
   to {
     transform: translateY(200px); } }
@@ -213,7 +208,7 @@ main {
   .function .float:hover {
     transform: scale(1.01) rotate(-5deg); }
   .function ul {
-    z-index: 98;
+    z-index: 2;
     padding: 2rem 2rem 2rem 2rem;
     grid-row: 3;
     grid-column: 3 / span 2;
