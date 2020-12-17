@@ -112,13 +112,15 @@ $('.faq').click(function(){
   })
 
 
-   $('.function').mouseenter(function(){
-  $('.quote').hide();
-  })
+   //$('.cover').hover(function(){
+  //$('.cover').delay(7000).hide();
+  //})
 
 
 
-
-
+$('.cover, .quote').delay(6000).queue( function (next) {
+    $(this).addClass('form-message');
+    next();
+});
  
 
