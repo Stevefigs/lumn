@@ -119,7 +119,7 @@ $('.faq').click(function(){
 
 
 $('.cover, .quote').delay(6000).queue( function (next) {
-    $(this).addClass('form-message');
+    $(this).addClass('endit');
     next();
 });
  
